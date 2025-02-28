@@ -9,11 +9,11 @@ interface FeatureProps {
 
 const Feature = ({ icon, title, description }: FeatureProps) => {
   return (
-    <div className="group p-6 rounded-xl border-2 border-blue-100 bg-white transition-all hover:shadow-lg hover:border-blue-300">
-      <div className="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-100 text-blue-600 group-hover:bg-blue-200">
+    <div className="group p-6 rounded-xl border-2 border-[#0c2340]/10 bg-white transition-all hover:shadow-lg hover:border-[#c8a035]">
+      <div className="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#f0f5fa] text-[#0c2340] group-hover:bg-[#c8a035]/20">
         {icon}
       </div>
-      <h3 className="mb-3 text-xl font-bold text-blue-900">{title}</h3>
+      <h3 className="mb-3 text-xl font-bold text-[#0c2340]">{title}</h3>
       <p className="text-gray-600 leading-relaxed">{description}</p>
     </div>
   );

@@ -38,7 +38,7 @@ const Hero = ({ title, subtitle, ctaText, onCtaClick }: HeroProps) => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center text-center px-4 py-20 md:py-32 bg-gradient-to-br from-blue-500 to-purple-600 text-white">
+    <div className="flex flex-col items-center justify-center text-center px-4 py-20 md:py-32 bg-gradient-to-br from-[#0c2340] to-[#1a3a5f] text-white">
       <h1 
         ref={titleRef} 
         className="text-4xl md:text-6xl font-bold tracking-tight max-w-3xl mb-6 opacity-0 balance-text"
