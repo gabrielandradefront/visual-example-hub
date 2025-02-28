@@ -38,26 +38,26 @@ const Hero = ({ title, subtitle, ctaText, onCtaClick }: HeroProps) => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center text-center px-4 py-32 md:py-40">
+    <div className="flex flex-col items-center justify-center text-center px-4 py-20 md:py-32 bg-gradient-to-br from-blue-500 to-purple-600 text-white">
       <h1 
         ref={titleRef} 
-        className="text-4xl md:text-6xl font-medium tracking-tight max-w-3xl mb-6 opacity-0 balance-text"
+        className="text-4xl md:text-6xl font-bold tracking-tight max-w-3xl mb-6 opacity-0 balance-text"
       >
         {title}
       </h1>
       <p 
         ref={subtitleRef}
-        className="text-lg md:text-xl text-gray-600 max-w-xl mb-10 opacity-0 balance-text"
+        className="text-lg md:text-xl text-white/90 max-w-xl mb-10 opacity-0 balance-text"
       >
         {subtitle}
       </p>
       {ctaText && (
         <div ref={ctaRef} className="opacity-0">
           <Button 
-            variant="primary" 
+            variant="secondary" 
             size="lg" 
             onClick={onCtaClick}
-            className="px-8"
+            className="px-8 font-bold rounded-full hover:scale-105"
           >
             {ctaText}
           </Button>

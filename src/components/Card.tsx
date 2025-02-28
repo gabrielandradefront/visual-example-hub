@@ -12,7 +12,7 @@ const Card = ({ title, description, imageUrl, category }: CardProps) => {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className="group relative overflow-hidden rounded-lg hover-card bg-white">
+    <div className="group relative overflow-hidden rounded-xl hover-card bg-white border-2 border-blue-100 transition-all hover:border-blue-300 hover:shadow-xl">
       <div className="relative h-60 overflow-hidden">
         <div className={`absolute inset-0 bg-gray-200 ${loaded ? 'hidden' : 'block'}`}></div>
         <img
@@ -23,17 +23,17 @@ const Card = ({ title, description, imageUrl, category }: CardProps) => {
           }`}
           onLoad={() => setLoaded(true)}
         />
-      </div>
-      <div className="p-6">
         {category && (
-          <span className="inline-block mb-2 text-xs font-medium px-2.5 py-0.5 rounded bg-gray-100">
+          <span className="absolute top-3 right-3 text-xs font-bold px-3 py-1 rounded-full bg-yellow-400 text-blue-900">
             {category}
           </span>
         )}
-        <h3 className="text-xl font-medium mb-2 transition-colors group-hover:text-gray-700">
+      </div>
+      <div className="p-6">
+        <h3 className="text-xl font-bold mb-3 text-blue-900 transition-colors group-hover:text-blue-600">
           {title}
         </h3>
-        <p className="text-gray-600 text-sm">{description}</p>
+        <p className="text-gray-600">{description}</p>
       </div>
     </div>
   );
