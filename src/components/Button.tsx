@@ -20,10 +20,10 @@ const Button = ({
   const baseStyle = "inline-flex items-center justify-center rounded-md font-medium transition-all button-hover focus:outline-none focus:ring-2 focus:ring-offset-2";
   
   const variants = {
-    primary: "bg-[#0c2340] text-white hover:bg-[#0a1c33] focus:ring-[#0c2340]",
-    secondary: "bg-[#c8a035] text-[#0c2340] hover:bg-[#dbb13c] focus:ring-[#c8a035]",
-    outline: "border-2 border-[#0c2340] bg-transparent text-[#0c2340] hover:bg-[#f0f5fa] focus:ring-[#0c2340]",
-    ghost: "bg-transparent text-[#0c2340] hover:bg-[#f0f5fa] focus:ring-[#0c2340]",
+    primary: "bg-[#33C3F0] text-white hover:bg-[#1EAEDB] focus:ring-[#33C3F0]",
+    secondary: "bg-[#ea384c] text-white hover:bg-[#d13344] focus:ring-[#ea384c]",
+    outline: "border-2 border-[#33C3F0] bg-transparent text-[#33C3F0] hover:bg-[#D3E4FD] focus:ring-[#33C3F0]",
+    ghost: "bg-transparent text-[#33C3F0] hover:bg-[#D3E4FD] focus:ring-[#33C3F0]",
   };
   
   const sizes = {

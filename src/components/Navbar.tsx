@@ -38,7 +38,7 @@ const Navbar = () => {
       <div className="layout flex items-center justify-between">
         <Link 
           to="/" 
-          className="font-bold text-2xl transition-colors duration-200 text-[#0c2340] hover:text-[#c8a035]"
+          className="font-bold text-2xl transition-colors duration-200 text-[#33C3F0] hover:text-[#ea384c]"
         >
           ExemplosVisuais
         </Link>
@@ -108,7 +108,7 @@ const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) =>
   return (
     <Link
       to={to}
-      className="relative py-1 text-sm font-bold after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#c8a035] after:transition-all after:duration-300 hover:text-[#c8a035] hover:after:w-full"
+      className="relative py-1 text-sm font-bold after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#ea384c] after:transition-all after:duration-300 hover:text-[#ea384c] hover:after:w-full"
     >
       {children}
     </Link>
@@ -119,7 +119,7 @@ const MobileNavLink = ({ to, children, onClick }: { to: string; children: React.
   return (
     <Link
       to={to}
-      className="text-base font-medium py-2 border-b border-gray-100 hover:text-[#c8a035]"
+      className="text-base font-medium py-2 border-b border-gray-100 hover:text-[#ea384c]"
       onClick={onClick}
     >
       {children}

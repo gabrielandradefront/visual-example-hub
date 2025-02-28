@@ -3,20 +3,20 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0c2340] text-white">
+    <footer className="bg-[#33C3F0] text-white">
       <div className="layout py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
             <Link to="/" className="text-2xl font-bold">
               ExemplosVisuais
             </Link>
-            <p className="mt-4 text-blue-200 max-w-md">
+            <p className="mt-4 text-blue-100 max-w-md">
               Uma coleção de exemplos visuais de alta qualidade para inspirar e auxiliar no desenvolvimento de interfaces modernas.
             </p>
           </div>
           
           <div>
-            <h4 className="font-bold text-sm uppercase tracking-wider text-[#c8a035] mb-4">
+            <h4 className="font-bold text-sm uppercase tracking-wider text-[#ea384c] mb-4">
               Links Rápidos
             </h4>
             <ul className="space-y-2">
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-bold text-sm uppercase tracking-wider text-[#c8a035] mb-4">
+            <h4 className="font-bold text-sm uppercase tracking-wider text-[#ea384c] mb-4">
               Legal
             </h4>
             <ul className="space-y-2">
@@ -39,8 +39,8 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="mt-12 pt-8 border-t border-[#1a3a5f] flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-blue-300">
+        <div className="mt-12 pt-8 border-t border-[#1EAEDB] flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-sm text-blue-100">
             © {new Date().getFullYear()} ExemplosVisuais. Todos os direitos reservados.
           </p>
           <div className="flex space-x-6">
@@ -71,7 +71,7 @@ const FooterLink = ({ to, children }: { to: string; children: React.ReactNode })
     <li>
       <Link 
         to={to} 
-        className="text-blue-200 hover:text-[#c8a035] transition-colors duration-200 text-sm"
+        className="text-blue-100 hover:text-[#ea384c] transition-colors duration-200 text-sm"
       >
         {children}
       </Link>
@@ -83,7 +83,7 @@ const SocialLink = ({ href, children, ...props }: React.AnchorHTMLAttributes<HTM
   return (
     <a 
       href={href} 
-      className="text-blue-300 hover:text-[#c8a035] transition-colors duration-200"
+      className="text-blue-100 hover:text-[#ea384c] transition-colors duration-200"
       target="_blank"
       rel="noopener noreferrer"
       {...props}
