@@ -1,7 +1,9 @@
 
-// Inicialização do módulo Angular principal
-import { bootstrapApplication } from '@angular/platform-browser';
+// Inicialização da aplicação com JavaScript puro
 import { AppComponent } from './app/app.component.js';
 
-bootstrapApplication(AppComponent)
-  .catch(err => console.error(err));
+// Montar a aplicação no carregamento da janela
+window.addEventListener('DOMContentLoaded', () => {
+  console.log('Aplicação inicializada');
+});
+

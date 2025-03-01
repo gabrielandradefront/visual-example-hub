@@ -1,24 +1,23 @@
 
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+// Importando os componentes necessários
 import { NavbarComponent } from './components/navbar.component.js';
 import { FooterComponent } from './components/footer.component.js';
 
+// Definindo o componente principal da aplicação
 export const AppComponent = {
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, NavbarComponent, FooterComponent],
   template: `
     <div class="flex flex-col min-h-screen">
       <app-navbar></app-navbar>
       <main class="flex-grow">
-        <router-outlet></router-outlet>
+        <div id="router-outlet"></div>
       </main>
       <app-footer></app-footer>
     </div>
   `
 };
 
+// Registrando o componente como um web component
 customElements.define('app-root', 
   class extends HTMLElement {
     constructor() {
@@ -27,3 +26,4 @@ customElements.define('app-root',
     }
   }
 );
+
