@@ -5,6 +5,10 @@ import { AppComponent } from './app/app.component.js';
 // Importando os components das páginas
 import { IndexComponent } from './app/pages/index.component.js';
 import { ButtonComponent } from './app/components/button.component.js';
+import { SobreComponent } from './app/pages/sobre.component.js';
+import { CursosComponent } from './app/pages/cursos.component.js';
+import { MetodologiaComponent } from './app/pages/metodologia.component.js';
+import { DepoimentosComponent } from './app/pages/depoimentos.component.js';
 
 // Função para renderizar a página correta com base na URL
 function renderPage() {
@@ -15,6 +19,14 @@ function renderPage() {
   
   if (path === '/' || path === '/index.html') {
     routerOutlet.innerHTML = '<app-index></app-index>';
+  } else if (path === '/sobre') {
+    routerOutlet.innerHTML = '<app-sobre></app-sobre>';
+  } else if (path === '/cursos') {
+    routerOutlet.innerHTML = '<app-cursos></app-cursos>';
+  } else if (path === '/metodologia') {
+    routerOutlet.innerHTML = '<app-metodologia></app-metodologia>';
+  } else if (path === '/depoimentos') {
+    routerOutlet.innerHTML = '<app-depoimentos></app-depoimentos>';
   } else {
     routerOutlet.innerHTML = '<div class="py-20 text-center"><h1>Página em Construção</h1><p>Esta página será implementada em breve!</p></div>';
   }
