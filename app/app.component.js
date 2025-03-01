@@ -26,4 +26,3 @@ customElements.define('app-root',
     }
   }
 );
-

@@ -53,7 +53,7 @@ customElements.define('app-button',
           button {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
+            justify-center;
             cursor: pointer;
           }
         </style>
