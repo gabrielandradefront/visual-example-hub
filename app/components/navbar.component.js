@@ -1,11 +1,9 @@
 
-import { Component } from '@angular/core';
+// Importando os componentes necessários
 import { ButtonComponent } from './button.component.js';
 
 export const NavbarComponent = {
   selector: 'app-navbar',
-  standalone: true,
-  imports: [ButtonComponent],
   template: `
     <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-md py-2">
       <div class="layout flex items-center justify-between">

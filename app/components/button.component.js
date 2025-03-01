@@ -1,9 +1,6 @@
 
-import { Component } from '@angular/core';
-
 export const ButtonComponent = {
   selector: 'app-button',
-  standalone: true,
   template: `
     <button class="{{buttonClass}}" type="button">
       <slot></slot>

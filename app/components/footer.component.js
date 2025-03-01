@@ -1,9 +1,6 @@
 
-import { Component } from '@angular/core';
-
 export const FooterComponent = {
   selector: 'app-footer',
-  standalone: true,
   template: `
     <footer class="bg-[#33C3F0] text-white">
       <div class="layout py-12 md:py-16">
